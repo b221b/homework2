@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://harrix.dev/blog/2019/install-android-studio/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Установка Android Studio в Windows | Harrix</title>
+<meta name="generator" content="Jekyll v4.0.1">
+<meta property="og:title" content="Установка Android Studio в Windows">
+<meta name="author" content="GitHub User">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="В статье рассказывается, как установить Android Studio в Windows 10.">
+<meta property="og:description" content="В статье рассказывается, как установить Android Studio в Windows 10.">
+<link rel="canonical" href="https://harrix.dev/blog/2019/install-android-studio/harrix.dev/blog/2019/install-android-studio/">
+<meta property="og:url" content="harrix.dev/blog/2019/install-android-studio/">
+<meta property="og:site_name" content="Harrix">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-07-16T00:00:00+03:00">
+<script type="application/ld+json">
+{"datePublished":"2019-07-16T00:00:00+03:00","dateModified":"2019-07-16T00:00:00+03:00","mainEntityOfPage":{"@type":"WebPage","@id":"harrix.dev/blog/2019/install-android-studio/"},"author":{"@type":"Person","name":"GitHub User"},"description":"В статье рассказывается, как установить Android Studio в Windows 10.","url":"harrix.dev/blog/2019/install-android-studio/","@type":"BlogPosting","headline":"Установка Android Studio в Windows","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="./Android Studio_ Windows_files/main.css"><link type="application/atom+xml" rel="alternate" href="https://harrix.dev/blog/2019/install-android-studio/harrix.dev/feed.xml" title="Harrix"><!-- Load jQuery -->
+  <script src="./Android Studio_ Windows_files/jquery-1.11.1.min.js"></script>
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="./Android Studio_ Windows_files/katex.min.css">
+  <script src="./Android Studio_ Windows_files/katex.min.js"></script>
+  <script src="./Android Studio_ Windows_files/auto-render.min.js"></script>
+
+
+  <script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    renderMathInElement(document.body, {
+      delimiters: [{
+          left: "$$",
+          right: "$$",
+          display: true
+        },
+        {
+          left: "$",
+          right: "$",
+          display: false
+        }
+      ]
+    });
+  });
+  </script>
+</head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="https://harrix.dev/">Harrix</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          <a class="page-link" href="https://harrix.dev/">Главная</a>
+          <a class="page-link" href="https://harrix.dev/en">English</a>
+          <a class="page-link" href="https://harrix.dev/games">Games</a>
+        </div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Установка Android Studio в Windows</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-07-16T00:00:00+03:00" itemprop="datePublished">Jul 16, 2019
+      </time></p><p><img src="./Android Studio_ Windows_files/featured-image.png"></p></header>
+
+  <div class="post-content e-content" itemprop="articleBody"><h2>Статьи из цикла</h2>
+<ul><li><a href="https://harrix.dev/blog/2020/empty-project-android/">Болванка приложения на Android Studio</a></li><li><a href="https://harrix.dev/blog/2019/add-2-num-android/">Сложение двух чисел в Android Studio на Java (Android приложение)</a></li><li><a href="https://harrix.dev/blog/2019/install-android-studio/">Установка Android Studio в Windows</a></li><li><a href="https://harrix.dev/blog/2019/add-2-num-intellij-idea/">Сложение двух чисел в IntelliJ IDEA на Java (консольное приложение)</a></li><li><a href="https://harrix.dev/blog/2019/install-intellij-idea/">Установка IntelliJ IDEA в Windows</a></li><li><a href="https://harrix.dev/blog/2019/install-jdk-on-windows/">Установка JDK в Windows</a></li><li><a href="https://harrix.dev/blog/2015/add-2-num-eclipse-java/">Сложение двух чисел в Eclipse на Java (консольное приложение)</a></li><li><a href="https://harrix.dev/blog/2014/install-eclipse-java/">Установка Eclipse в Windows</a></li></ul><p>В статье рассказывается, как установить Android Studio в Windows 10.</p>
+
+<h2 id="предварительные-напутствия">Предварительные напутствия</h2>
+
+<p>Настоятельно рекомендую устанавливать Android Studio на 64-битную операционную систему. На сайте Android Studio даже нет полноценного установщика на 32-битную версию Windows (есть просто архив с программой без установки).</p>
+
+<p>В идеале лучше использовать Windows 10 x64, но на Windows 8.1, 8, 7 тоже должно пойти.</p>
+
+<p>Помните, что для Android Studio нужно минимум 4 Гб оперативной памяти (раньше было 2 Гб). Лучше иметь от 8 Гб и выше. Программа очень прожорливая. А на жестком диске нужно приличное количество места: лично у меня сейчас папка с Android Studio занимает 20,3 Гб (у вас по началу будет меньше).</p>
+
+<p>Желательно иметь процессор от Intel, так как на процессорах AMD будут проблемы с эмуляторами Android. Но они решаемы.</p>
+
+<p>И желательно, чтобы процессор имел поддержку виртуализации: сильно ускорит работу эмуляторов.</p>
+
+<p>И если есть возможность и если пользователь на вашем компьютере называется по-русски, то поменяйте его на английское написание. Проблем с русскими именами будет много, причем не только в Android Studio. Очень много программ зарубежного производства рассчитаны на работу с файлами, в пути которых только латиница. Но если возможности нет для смены имени, то в статье будут описаны решения некоторых ваших проблем.</p>
+
+<h2 id="jdk">JDK</h2>
+
+<p>Вначале необходимо установить <strong>JDK</strong>. Всё просто, но если есть вопросы, то подробно можно узнать в статье: <a href="https://harrix.dev/blog/2019/install-jdk-on-windows/">Установка JDK в Windows</a>.</p>
+
+<h2 id="скачивание-android-studio">Скачивание Android Studio</h2>
+
+<p>Переходим по ссылке: <a href="https://developer.android.com/studio/">https://developer.android.com/studio/</a>.</p>
+
+<p>Нажимаем на кнопку скачивания:</p>
+
+<p><img src="./Android Studio_ Windows_files/download_01.png" alt="Кнопка скачивания Android Studio"></p>
+
+<p>Соглашаемся с лицензией и скачиваем:</p>
+
+<p><img src="./Android Studio_ Windows_files/download_02.png" alt="Скачивание установщика"></p>
+
+<p>Если у вас Windows 32-битная и автоматически сайт это не определил, то можно скачать нужную себе версию:</p>
+
+<p><img src="./Android Studio_ Windows_files/download_03.png" alt="Выбор установщика"></p>
+
+<p>Обратите внимание на то, что вам предложат скачать архив, а не установщик для 32-битной Windows. Этот архив нужно будет распаковать и запустить файл <code class="highlighter-rouge">studio.exe</code> в папке <code class="highlighter-rouge">bin</code> без установки:</p>
+
+<p><img src="./Android Studio_ Windows_files/download_04.png" alt="Выбор установщика"></p>
+
+<h2 id="установка-64-битной-android-studio">Установка 64-битной Android Studio</h2>
+
+<p>Запускаем скаченный файл:</p>
+
+<p><img src="./Android Studio_ Windows_files/install_01.png" alt="Первое окно установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/install_02.png" alt="Выбор компонентов для установки"></p>
+
+<p>Android Studio будет использовать несколько папок для своих нужд: сама программа, библиотеки SDK и др. И все папки будут по умолчанию находиться в разных местах.</p>
+
+<p>Зачем нам? Создадим одну папку на вашем диске (например, <code class="highlighter-rouge">C:\Android</code> или <code class="highlighter-rouge">D:\Android</code>), в которую всё будем устанавливать. Создадим в этой папке папку <code class="highlighter-rouge">Android Studio</code> и <code class="highlighter-rouge">sdk</code>.</p>
+
+<p>И в следующем окне установщика меняем путь установку приложения на нашу созданную папку:</p>
+
+<p><img src="./Android Studio_ Windows_files/install_03.png" alt="Изменение пути установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/install_04.png" alt="Путь поменялся"></p>
+
+<p>Да, на скриншоте выше и на следующих папка <code class="highlighter-rouge">Android</code> находиться на диске <code class="highlighter-rouge">D:\</code>, а не на <code class="highlighter-rouge">C:\</code>. Причина в том, что лично у меня Android Studio поставлен на второй диск <code class="highlighter-rouge">D:\</code>, так как в процессе работы размер папки <code class="highlighter-rouge">Android</code> может вырасти до 20 и более гигабайт, а SSD у меня не резиновый. На какой диск вы будете лично ставить: ваше личное предпочтение.</p>
+
+<p>Далее по умолчанию, или выберете, где в меню <code class="highlighter-rouge">Пуск</code> будет находится Android Studio:</p>
+
+<p><img src="./Android Studio_ Windows_files/install_05.png" alt="Выбор папки в меню Пуск"></p>
+
+<p>И пошел процесс установки:</p>
+
+<p><img src="./Android Studio_ Windows_files/install_06.png" alt="Процесс установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/install_07.png" alt="Окончание установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/install_08.png" alt="Последнее окно программы установки"></p>
+
+<h2 id="установка-предварительной-сборки">Установка предварительной сборки</h2>
+
+<p>В момент написания обновленной версии вышла версия 3.6.2, но 4.0 уже на подходе. Поэтому дальнейшие действия буду показывать на этой предварительной сборке. Но вначале покажу, как её установить.</p>
+
+<p>На сайте <a href="https://developer.android.com/studio/preview/">https://developer.android.com/studio/preview/</a> скачиваем бета версию программы:</p>
+
+<p><img src="./Android Studio_ Windows_files/preview_01.png" alt="Страница с предварительными версиями программы"></p>
+
+<p><img src="./Android Studio_ Windows_files/preview_02.png" alt="Соглашение с условиями"></p>
+
+<p>Скачается не установщик, а архив, который мы распаковываем. И в папке <code class="highlighter-rouge">bin\</code> находится файл <code class="highlighter-rouge">studio64.exe</code>, который и запускаем:</p>
+
+<p><img src="./Android Studio_ Windows_files/preview_03.png" alt="Файл Android Studio"></p>
+
+<p><img src="./Android Studio_ Windows_files/preview_04.png" alt="Запущенная бета версия программы"></p>
+
+<h2 id="первоначальная-настройка-android-studio">Первоначальная настройка Android Studio</h2>
+
+<p>При первом запуске Android Studio нас попросят выставить некоторые настройки. Сперва появится это окно:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_01.png" alt="Запрос на импорт настроек"></p>
+
+<p><img src="./Android Studio_ Windows_files/config_02.png" alt="Приветственное окно"></p>
+
+<p>Выбираем расширенную настройку параметров:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_03.png" alt="Выбор типа настроек"></p>
+
+<p>Выбор светлой или темной темы:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_04.png" alt="Выбор темы редактора"></p>
+
+<p>Если Android Studio не смог найти сам JDK, то нужно ему помочь его найти:</p>
+
+<p><img src="./Android Studio_ Windows_files/config-jdk_01.png" alt="Кнопка выбора пути к JDK"></p>
+
+<p><img src="./Android Studio_ Windows_files/config-jdk_02.png" alt="Выбор пути к JDK"></p>
+
+<p><img src="./Android Studio_ Windows_files/config-jdk_03.png" alt="Выбранный путь к JDK"></p>
+
+<p>Далее идет очень важный шаг! Если вы думали, что при установке Android Studio всё поставилось, то вынужден вас разочаровать.</p>
+
+<p>Во-первых, нам нужно установить эмулятор Android (особенно если у вас нет физического реального устройства под Android).</p>
+
+<p>Во-вторых, помните, как мы создавали папку <code class="highlighter-rouge">Android\sdk</code>? Вот теперь наступил момент, когда её указываем в качестве расположения SDK:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_05.png" alt="Выбор того, что еще нужно установить"></p>
+
+<p><img src="./Android Studio_ Windows_files/config_06.png" alt="Выбор пути к папке SDK"></p>
+
+<p><img src="./Android Studio_ Windows_files/config_07.png" alt="Измененный путь к SDK"></p>
+
+<p>Выбираем объем оперативной памяти для эмулятора. Если у вас много оперативной памяти в компьютере, то можно указать объем побольше. Меньше 2 Гб лучше не указывать:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_08.png" alt="Объем памяти для эмулятора"></p>
+
+<p>Список того, что будет установлено:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_09.png" alt="Окно перед установкой компонентов"></p>
+
+<p>Сама установка:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_10.png" alt="Процесс установки"></p>
+
+<p>Хорошо, если в окне окончания установки не будет красного текста, который свидетельствует о том, что что-то не установилось. Например, обладатели AMD процессоров возможно увидят сообщение, что не установился HAXM. Это будет означать, что стандартный эмулятор вы скорее всего нормально не запустите, но Android Studio будет работать полноценно. Если у вас появились другие сообщения об ошибках, то это плохо. Окончание установки:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_11.png" alt="Окончание установки"></p>
+
+<h2 id="создание-нового-приложения">Создание нового приложения</h2>
+
+<p>Теперь создадим новое приложение:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_01.png" alt="Создание нового приложения"></p>
+
+<p>Выбираем болванку нашего приложения <code class="highlighter-rouge">Empty Activity</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_02.png" alt="Выбор типа активности проекта"></p>
+
+<p>Раньше далее шло несколько окон с разными настройками, но сейчас они все объединены в одно окно:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_03.png" alt="Настройки проекта"></p>
+
+<p><strong>Внимание!</strong> В пути к проекту, как и в его названии, не должно быть <strong>русских букв</strong> и <strong>пробелов</strong>! По умолчанию Android Studio сохраняет проекты в папке пользователя компьютера. И если у вас пользователь написан русскими буквами, то ничего не запустится!</p>
+
+<p>Поэтому рекомендую создать какую-нибудь папку, где будете располагать свои проекты. Например, у меня это папка <code class="highlighter-rouge">D:\Harrix\Projects\Android</code>. Вначале, когда я делал скриншот выше, я поменял путь на <code class="highlighter-rouge">D:\Harrix\Projects\Android</code>, но не всё так хорошо. Android Studio считает, что в папке <code class="highlighter-rouge">D:\Android\Projects</code> будет находиться только один наш новый проект. В других IDE этот момент продуман, а тут такой косяк возникает.</p>
+
+<p>В общем, вручную дописываем название проекта в пути проекта, <strong>убирая пробелы</strong> из названия. Саму папку создавать не нужно: Android Studio создаст её сам. По итогу у меня получился путь <code class="highlighter-rouge">D:\Harrix\Projects\Android\MyApplication</code>. В последующие разы Android Studio будет создавать проекты по нормальному.</p>
+
+<p>Также в этом окне выбираем язык Java как основной язык проекта (по умолчанию будет выбран Kotlin), минимальную версию Android, на котором будет запускаться приложение (версия 4.0.3, которая стоит по умолчанию, вполне сойдет).</p>
+
+<p>И должно наконец-то появиться окно редактора Android Studio:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_04.png" alt="Редактор Android Studio"></p>
+
+<p>Если надо, то закройте окно с подсказками:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_tips.png" alt="Окно с подсказками"></p>
+
+<p>В этот момент начнет работать Gradle, чтобы синхронизировать нужные библиотеки. И пока внизу не прекратиться крутиться кружок, то проект не готов к работе. Если у вас компьютер слабый, то крутиться кружок будет долго:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_05.png" alt="Gradle синхронизирует проект"></p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_06.png" alt="Gradle закончил синхронизацию проекта"></p>
+
+<p>Возможно (не обязательно) внизу появится сообщение об ошибке <code class="highlighter-rouge">Install Tools ... and sync project</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/new-project_07.png" alt="Ситуация, когда не хватает пакетов SDK"></p>
+
+<p>Эту ошибку вы будете встречать часто, когда будете открывать чьи-то проекты программ на Android Studio, сделанных не на вашем компьютере. Бояться её не нужно: просто щелкните по этой синей надписи <code class="highlighter-rouge">Install Tools ... and sync project</code>: Android Studio просто говорит, что ему нужны библиотеки SDK, которых нет у вас, и предлагает их скачать.</p>
+
+<h2 id="для-тех-у-кого-пользователь-назван-русскими-буквами">Для тех у кого пользователь назван русскими буквами</h2>
+
+<p>Если у вас пользователь назван русскими буквами, то в предыдущем разделе столкнетесь с тем, что Gradle не синхронизирует проект и вообще он на всё ругается. Дело в том, что по умолчанию Gradle в новых версиях Android Studio ставит в отдельную папку, которая находится в папке пользователя.</p>
+
+<p>Вам нужно поменять папку на другую. Создадите, например, папку <code class="highlighter-rouge">D:\Android\gradle</code>. Потом идите в настройки Android Studio:</p>
+
+<p><img src="./Android Studio_ Windows_files/settings.png" alt="Настройки Android Studio"></p>
+
+<p>Там находим настройки Gradle. Видим, что Gradle сейчас находится в папке пользователя:</p>
+
+<p><img src="./Android Studio_ Windows_files/gradle_01.png" alt="Настройки Gradle"></p>
+
+<p>Меняем его на путь к папке, которую мы создали, например, это <code class="highlighter-rouge">D:\Android\gradle</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/gradle_02.png" alt="Путь к Gradle"></p>
+
+<p>Но после нажатия <code class="highlighter-rouge">OK</code> ничего не произойдет (правда в этот раз у меня слетела светлая тема оформления). Нужно Gradle синхронизировать принудительно. Для этого наверху есть кнопка <code class="highlighter-rouge">Sync Project with Gradle Files</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/gradle_03.png" alt="Кнопка синхронизации проекта"></p>
+
+<p>И начнется небыстрый процесс скачивания и установки gradle в новую папку с последующей синхронизацией проекта:</p>
+
+<p><img src="./Android Studio_ Windows_files/gradle_04.png" alt="Кнопка синхронизации Gradle"></p>
+
+<p>Чтобы убедиться, что всё прошло хорошо, то можно посмотреть папку <code class="highlighter-rouge">D:\Android\gradle</code>, где должны появиться следующие папки:</p>
+
+<p><img src="./Android Studio_ Windows_files/gradle_05.png" alt="Переустановка Gradle"></p>
+
+<p>Так как у меня слетела тема оформления, то нужно её вернуть (<code class="highlighter-rouge">File</code> → <code class="highlighter-rouge">Settings...</code>):</p>
+
+<p><img src="./Android Studio_ Windows_files/color-scheme.png" alt="Выбор темы оформления"></p>
+
+<h2 id="настройка-sdk">Настройка SDK</h2>
+
+<p>Надеялись, что всё установили? Нет, теперь нужно настроить SDK. Для этого из Android Studio нужно перейти в <code class="highlighter-rouge">SDK Manager</code>. Это можно сделать так:</p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_01.png" alt="SDK Manager"></p>
+
+<p>В разделе <code class="highlighter-rouge">SDK Platforms</code> вы выбираете те версии Android, которые вам потребуются. Можно, например, выбрать последнюю стабильную и минимальную версию,под которой всё должно работать, как показано на скриншоте ниже:</p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_02.png" alt="Выбор версий Android в SDK"></p>
+
+<p>В <code class="highlighter-rouge">SDK tools</code> выберете <code class="highlighter-rouge">Google USB Driver</code> (чтобы можно было подключать планшеты и смартфоны), <code class="highlighter-rouge">Google Web Driver</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_03.png" alt="Выбор инструментов SDK"></p>
+
+<p>Нажимаете на <code class="highlighter-rouge">OK</code> и начинается процесс установки:</p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_04.png" alt="Информация, какие компоненты будут установлены"></p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_05.png" alt="Процесс установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_06.png" alt="Окончание установки"></p>
+
+<p><img src="./Android Studio_ Windows_files/sdk_07.png" alt="Окончание установки"></p>
+
+<h2 id="создание-виртуального-устройства">Создание виртуального устройства</h2>
+
+<p>Если у вас нет физического Android устройства, или же вы хотите своё приложение протестировать на конкретных устройствах с конкретной версией Android, то вам нужно будет виртуальное устройство.</p>
+
+<p>Идем в <code class="highlighter-rouge">AVD Manager</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_01.png" alt="AVD Manager"></p>
+
+<p>Как видим, уже есть одно виртуальное устройство, и можно больше не создавать, а перейти к следующему разделу по запуску приложения. Но мы попробуем сейчас создать еще одно:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_02.png" alt="Создание нового виртуального устройства"></p>
+
+<p>Выбираем, какое устройство будем создавать. Допустим, мы хотим создать эмулятор <code class="highlighter-rouge">Nexus 5</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_03.png" alt="Выбор устройства"></p>
+
+<p><strong>Внимание!</strong> Важный шаг. Для эмулятора нужен образ версии Android, который будет устанавливаться на эмулятор. И вам нужно будет его скачать, нажав на <code class="highlighter-rouge">Download</code>. Например, нам нужен Android 8.0:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_04.png" alt="Выбор версии Android"></p>
+
+<p>Рекомендую выбирать версию Android от 6 и выше. Например, в этот раз вначале я хотел создать эмулятор с Android 8, который был успешно создан. Но при попытке запуска приложений на нем возникала ошибка такого вида:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_error.png" alt="Ошибка при запуске приложений"></p>
+
+<p>Обычно такая ошибка решается отключением <code class="highlighter-rouge">Instant Run</code> в настройках, но в этот раз не помогало. Так что еще раз рекомендую выбирать версию Android от 6 и выше (с ними у меня проблемы не возникли).</p>
+
+<p>Если вы обладатель AMD процессора, то вполне вероятно, что образ Android x86 не заработает у вас, поэтому нужно выбирать (после неудачной попытки с образом x86) образ Android из другой вкладки под <code class="highlighter-rouge">armeabi-v7a</code>. Но сразу предупреждаю: если у вас эмулятор под <code class="highlighter-rouge">armeabi</code> заведется всё-таки, то работать он будет очень медленно, и было на практике много случаев, когда эмулятор потом так и не запускался:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_05.png" alt="Выбор других образов для виртуального устройства"></p>
+
+<p>После нажатия на кнопку <code class="highlighter-rouge">Download</code> начнется скачивание образа:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_06.png" alt="Скачивание образа"></p>
+
+<p>Возможно, что перед этим вас попросят согласиться с лицензией:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_license.png" alt="Соглашение с лицензией"></p>
+
+<p>После этого образ Android будет доступен для выбора и можно продолжить создание виртуального устройства:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_07.png" alt="Следующий шаг в создании эмулятора"></p>
+
+<p>Здесь всё можно оставить по умолчанию:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_08.png" alt="Выбор настроек эмулятора"></p>
+
+<p>Попробуем запустить эмулятор:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_09.png" alt="Запуск эмулятора"></p>
+
+<p>Если через какое-то время у вас в эмуляторе запустился полноценный Android, то всё замечательно:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_10.png" alt="Запущенный эмулятор"></p>
+
+<p>Можно пока его не закрывать, так как будем его использовать для запуска нашего приложения. Но для будущего есть рекомендация: закрывать эмулятор лучше через крестик, а не через кнопку питания, которая находится чуть ниже: практика показывает, что при отключении питания потом эмулятор может не запуститься:</p>
+
+<p><img src="./Android Studio_ Windows_files/avd_11.png" alt="Способ, как закрывать эмулятор"></p>
+
+<h2 id="другие-эмуляторы">Другие эмуляторы</h2>
+
+<p>Если родной эмулятор от Android Studio не запускается или тормозит так, что работать нельзя, то можно попробовать сторонние эмуляторы, благо их много.</p>
+
+<p><a href="https://harrix.dev/blog/2018/genymotion-for-android-studio/">Genymotion</a> — по работе похож на родной эмулятор Android Studio. Можно устанавливать образы разных версий Android.</p>
+
+<p><a href="https://harrix.dev/blog/2018/koplayer-for-android-studio/">Koplayer</a> — говорят, что он нетребователен к оперативной памяти и работает даже при 2 Гб оперативки.</p>
+
+<p><a href="https://harrix.dev/blog/2018/bluestacks-for-android-studio/">BlueStacks</a> — известный эмулятор, предназначенный в первую очередь для запуска игр Android на ПК, но его можно использовать и для Android Studio.</p>
+
+<p><a href="https://harrix.dev/blog/2018/nox-for-android-studio/">Nox</a> — еще один популярный эмулятор от китайцев, которым лично много пользовался.</p>
+
+<h2 id="запуск-приложения">Запуск приложения</h2>
+
+<p>Теперь у нас Android установлен и настроен. Мы создавали приложение до этого. Давайте его запустим. Для этого щелкаем по зеленому треугольнику в панели инструментов:</p>
+
+<p><img src="./Android Studio_ Windows_files/run_01.png" alt="Запуск приложения"></p>
+
+<p>Или из главного меню вызвать такую же команду:</p>
+
+<p><img src="./Android Studio_ Windows_files/run_02.png" alt="Запуск приложения"></p>
+
+<p>Обратите внимание на то, что раньше в Android Studio после нажатия на кнопку запуска предлагалось выбрать устройство, на котором будет происходить запуск, то сейчас вначале нужно выбрать устройство в выпадающем меню слева от кнопки запуска:</p>
+
+<p><img src="./Android Studio_ Windows_files/run_03.png" alt="Выбор устройства для запуска"></p>
+
+<p>Если вы выключили эмулятор, то можно либо его запустить через AVD Manager, либо тут выбрать эмулятор и по нему щелкнуть. Но если у вас устройство медленное, и эмулятор запускается долго, то лучше его запустить заранее.</p>
+
+<p>Вас могут попросить что-нибудь дополнительно установить (привыкайте к этому):</p>
+
+<p><img src="./Android Studio_ Windows_files/run_04.png" alt="Запрос на установку нужных библиотек"></p>
+
+<p><img src="./Android Studio_ Windows_files/run_05.png" alt="Установка компонентов"></p>
+
+<p>Ждем, когда Gradle соберет проект, сформирует APK файл и загрузит его на устройство:</p>
+
+<p><img src="./Android Studio_ Windows_files/run_06.png" alt="Запуск приложения"></p>
+
+<h2 id="как-запустить-на-реальном-физическом-устройстве">Как запустить на реальном физическом устройстве</h2>
+
+<p>Вначале включим режим <code class="highlighter-rouge">Для разработчиков</code> на телефоне.</p>
+
+<p>Зайдите в настройки телефона и в разделе <code class="highlighter-rouge">О телефоне</code> найдите пункт <code class="highlighter-rouge">Номер сборки</code>. Щелкните по нему <strong>7 раз</strong>. На скриншоте ниже мне пишут: «Не нужно, вы уже разработчик», — так как я уже нажимал 7 раз на этот пункт в прошлом:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_01.png" alt="Включение режима разработчика"></p>
+
+<p>Теперь в настройках телефона уровнем выше должен появиться пункт <code class="highlighter-rouge">Для разработчиков</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_02.png" alt="Режим «Для разработчиков»"></p>
+
+<p>В нем нужно включить пункт <code class="highlighter-rouge">Отладка по USB</code>:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_03.png" alt="Пункт «Отладка по USB»"></p>
+
+<p>Теперь, если вы включите свой смартфон через кабель к компьютеру, то устройство должно увидеться в списке устройств:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_04.png" alt="Устройство видно в списке устройств"></p>
+
+<p>Но оно не получится запустить приложение на нем, так как устройство имеет подпись <code class="highlighter-rouge">Unknown Device</code>. Это возникает по причине того, что на самом устройстве мы не разрешили компьютеру подключение. Разрешите:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_05.png" alt="Разрешение подключение на телефоне"></p>
+
+<p>Если вы пропустили это окно, то вытащите кабель и вставьте его обратно.</p>
+
+<p>После разрешения доступа устройство должно появиться полноценно:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_06.png" alt="Устройство видно и доступно"></p>
+
+<p>Теперь его можно выбирать при запуске приложения на телефоне:</p>
+
+<p><img src="./Android Studio_ Windows_files/phone_07.png" alt="Запущенное приложение"></p>
+
+<p>Сейчас я описал алгоритм подключения устройства в общем случае на примере Windows 10 и OnePlus 3t с Android 8.0. У вас подключение может отличаться. Лучше загуглить подключение вашего устройства к Android Studio. Пример запроса: <code class="highlighter-rouge">Galaxy A6 connect Android Studio Windows 7</code>.</p>
+
+<p>Например, на Windows 7 нужно устанавливать драйвера телефона. Где взять для некоторых марок телефонов можно найти тут: <a href="https://developer.android.com/studio/run/oem-usb">https://developer.android.com/studio/run/oem-usb</a>.</p>
+
+<p>Для Samsung телефонов драйвера автоматически ставятся при установке приложений <a href="https://www.samsung.com/ru/support/app/kies/">Samsung</a> (устройства с версией Android до 4.2 включительно) и <a href="https://www.samsung.com/ru/support/app/smartswitch/">Samsung Smart Switch</a> (устройства с версией Android выше 4.2).</p>
+
+<p>Windows 10 обычно все драйвера находит автоматически (это огромный плюс этой операционной системы).</p>
+
+<h2 id="дополнительные-настройки">Дополнительные настройки</h2>
+
+<p>Настройки, описанные в данном разделе, опциональны, и можно их вообще не трогать.</p>
+
+<p>Переходим в настройки приложения:</p>
+
+<p><img src="./Android Studio_ Windows_files/config_12.png" alt="Настройки приложения"></p>
+
+<p><img src="./Android Studio_ Windows_files/config_13.png" alt="Настройки приложения"></p>
+
+<p>В разделе <code class="highlighter-rouge">General</code> я ставлю возможность увеличения шрифта колесиком мыши при нажатом <code class="highlighter-rouge">Ctrl</code>, а также устанавливаю правило, что при сохранении файла все лишние пробелы справа у всех строк будут удаляться.</p>
+
+<h2 id="пример-приложения">Пример приложения</h2>
+
+<p>В статье <a href="https://harrix.dev/blog/2019/add-2-num-android/">Сложение двух чисел в Android Studio на Java (Android приложение)</a> написано как вы можете написать простое приложение по сложению двух чисел.&lt;ul&gt;&lt;li&gt;<a href="https://commons.wikimedia.org/wiki/File:Android_Studio_icon.svg">Android Studio icon.svg</a> by <a href="https://developer.android.com/license">Google Inc.</a> / <a href="https://harrix.dev/blog/2019/install-android-studio/"></a> (2019-06-07)&lt;/li&gt;&lt;li&gt;<a href="https://commons.wikimedia.org/wiki/File:Windows_10_Logo.svg">Windows 10 Logo.svg</a> by <a href="https://www.microsoft.com/">Microsoft</a> / <a href="https://harrix.dev/blog/2019/install-android-studio/"></a> (2019-06-22)&lt;/li&gt;&lt;/ul&gt;</p>
+
+  </div><hr><p>Статья обновлена <b>2020-04-21</b></p><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+
+  <p>Тэги:</p>
+
+  <ul><li>Установка</li><li>Android Studio</li><li>Android</li><li>Java</li></ul>
+
+  <hr>
+
+  <p>Категории:</p>
+
+  <ul><li>blog</li><li>it</li><li>program</li></ul>
+
+  <hr>
+
+  <p></p><p>В статье рассказывается, как установить Android Studio в Windows 10.</p>
+<p></p>
+
+  <hr>
+
+  <p></p><p>В статье рассказывается, как установить Android Studio в Windows 10.</p><p></p>
+
+  <hr>
+
+  <a class="u-url" href="https://harrix.dev/blog/2019/install-android-studio/" hidden=""></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Harrix</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">GitHub User</li><li><a class="u-email" href="mailto:TODO@mail.ru">TODO@mail.ru</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/harrix"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">harrix</span></a></li><li><a href="https://harrix.dev/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+</body></html>
