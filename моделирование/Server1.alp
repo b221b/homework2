@@ -205,7 +205,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2]]></Code>
+							<Code><![CDATA[120]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1707680955818</Id>
@@ -986,7 +986,7 @@
 agent.col_vixod=sink.count();
 agent.col_vxod=source.count();
 ver_obrabotki.add(agent.col_vixod/ agent.col_vxod);
-KolZap= round(sink.in.count()/129.6)]]></Code>
+KolZap= round(sink.in.count()/237.6)]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2051,8 +2051,8 @@ KolZap= round(sink.in.count()/129.6)]]></Code>
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1707609600000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1711067040000]]></FinalDate>	
-				<FinalTime><![CDATA[3457440.0]]></FinalTime>	
+				<FinalDate><![CDATA[1708464960000]]></FinalDate>	
+				<FinalTime><![CDATA[855360.0]]></FinalTime>	
 			</ModelTimeProperties>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	
