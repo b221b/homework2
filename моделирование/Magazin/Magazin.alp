@@ -920,6 +920,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[resourceQuantity]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[4]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[seizePolicy]]></Name>
